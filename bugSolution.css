@@ -1,0 +1,16 @@
+/* bugSolution.css */
+
+/* Ensure consistent units within calc() expressions */
+.container {
+  width: calc(100% - 20px); /* Consistent use of px */
+}
+
+/* Handle potential invalid calculations by setting fallback values */
+.element {
+  width: calc(min(500px, 80vw)); /* Fallback to 500px if 80vw exceeds 500px */
+}
+
+/* Avoid unsupported units or use a consistent unit system for calculations */
+.anotherElement {
+  width: calc((100%/3) - 10px); /* Use px as the default unit */
+}
